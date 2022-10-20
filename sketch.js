@@ -13,8 +13,8 @@ function setup() {
   + 'Around 600 of these local deaths were civilians, while the rest were insurgents/militants.';
 
   let s4 = 'The fighting during this battle was super dense urban combat which led to the massive percentage '
-  + ' of civilian casualties. This first battle was especially traumatizing given the circumstances and led '
-  + ' to the public opinions severely declining regarding the Iraq war.';
+  + 'of civilian casualties. This first battle was especially traumatizing given the circumstances and led '
+  + 'to the public opinions severely declining regarding the Iraq war.';
 
   s5 = 'CONTENT WARNING';
 
