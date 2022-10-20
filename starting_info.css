@@ -1,27 +1,38 @@
 html, body {
     margin: 0;
     padding: 0;
-  }
+}
 
 h1 {
     text-align: center;
+    background: rgb(25, 25, 25);
+    font-family:'Times New Roman', Times, serif;
+    border: 10px solid rgb(194, 178, 128);
+    padding: 1em;
+    text-decoration: none;
+    color: rgb(194, 178, 128);
+    letter-spacing: 7px;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 .Button {
     text-align: center;
+    transform: translateY(2850%);
 }
 
 a {
-    background: black;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    border: 5px solid crimson;
+    background: rgb(25, 25, 25);
+    font-family:'Times New Roman', Times, serif;
+    border: 7px solid red;
     padding: 1em;
     text-decoration: none;
-    color: crimson;
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 canvas {
-    position:absolute;
-    left:25%;
-    width: 50%;
+    transform: translateX(25%);
 }
