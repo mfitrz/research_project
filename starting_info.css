@@ -1,0 +1,27 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+h1 {
+    text-align: center;
+}
+
+.Button {
+    text-align: center;
+}
+
+a {
+    background: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 5px solid crimson;
+    padding: 1em;
+    text-decoration: none;
+    color: crimson;
+}
+
+canvas {
+    position:absolute;
+    left:25%;
+    width: 50%;
+}
