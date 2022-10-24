@@ -2,6 +2,7 @@ let s5;
 
 function setup() {
 
+  // Background information about my project
   let s = 'The First and Second Battles of Fallujah took place during the Iraq War. '
   + 'The first battle took place from April 4 - May 1 2004. '
   + 'The second battle took place from November 7 - December 23, 2004. ';
@@ -17,8 +18,6 @@ function setup() {
   + 'to the public opinions severely declining regarding the Iraq war.';
 
   s5 = 'CONTENT WARNING';
-
-
 
   createCanvas(windowWidth/1.5, windowHeight/1.5);
   background(194, 178, 128);
@@ -41,10 +40,12 @@ function setup() {
 }
 
 function draw() {
+  // Makes the CONTENT WARNING flash red a few times second
   if (frameCount % 12 == 0) {
     fill('red');
   } else {
     fill(25, 25, 25);
   }
+  // Draws the content warning
   text(s5, windowWidth/1.5 * (0.5), windowHeight/1.5 * (0.90), windowWidth/1.5 - windowWidth/50);
 }
