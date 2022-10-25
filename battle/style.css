@@ -1,0 +1,120 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    background: rgb(25, 25, 25);
+    font-family:'Times New Roman', Times, serif;
+    border: 10px solid rgb(194, 178, 128);
+    padding: 1em;
+    text-decoration: none;
+    color: rgb(194, 178, 128);
+    letter-spacing: 7px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.Button {
+    text-align: center;
+    transform: translateY(2850%);
+}
+
+a {
+    background: rgb(25, 25, 25);
+    font-family:'Times New Roman', Times, serif;
+    border: 7px solid green;
+    padding: 1em;
+    text-decoration: none;
+    color: green;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+canvas {
+    transform: translateX(25%);
+}
+
+.Slider {
+    margin-left: 50%;
+}
+
+/* 
+I got the below CSS code from http://danielstern.ca/range.css/?ref=css-tricks#/ 
+This website allows for you to customize sliders on the website and will generate the code for
+the style you have created. I used this custom slider to control my volume. 
+*/
+input[type=range] {
+    width: 50%;
+    margin-left: 25%;
+    background-color: transparent;
+    -webkit-appearance: none;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    background: #c2b280;
+    border: 0.2px solid #010101;
+    border-radius: 1.3px;
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    margin-top: -10px;
+    width: 18px;
+    height: 28px;
+    background: #191902;
+    border: 2px solid #c2b280;
+    border-radius: 50px;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #cabc91;
+  }
+  input[type=range]::-moz-range-track {
+    background: #c2b280;
+    border: 0.2px solid #010101;
+    border-radius: 1.3px;
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+  }
+  input[type=range]::-moz-range-thumb {
+    width: 18px;
+    height: 28px;
+    background: #191902;
+    border: 2px solid #c2b280;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    border-width: 14px 0;
+    color: transparent;
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #baa86f;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #c2b280;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+  }
+
+  input[type=range]:focus::-ms-fill-lower {
+    background: #c2b280;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #cabc91;
+  }

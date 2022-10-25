@@ -36,17 +36,26 @@ var Soldier3 = {
 var soldier_array = new Array(Soldier, Soldier2, Soldier3);
 
 var time_limit = 20;  // Need to survive 10 seconds to beat the game
-var time_remaining;
-var died = false;
+var time_remaining;  // Time to be displayd on countdown
+var died = false;  // Game state to see if the player is still alive
 
-// Assigns the marine object's img value to the image passed in
+var sound_slider;  // Volume slider
+var battle_fodder;  // Background noise (gunshots, explosions, etc.)
+
+// Loads all the necessary images and sounds
 function preload() {
     marine_image = loadImage('./soldier.png');
     soldier_image = loadImage('./soldier_2.png');
+    battle_fodder = loadSound('./battle_sound.mp3');
 }
 
 function setup() {
     createCanvas(windowWidth/1.5, windowHeight/1.5);
+
+    sound_slider = createSlider(0, 1, 1, 0.05);  // Create a slider to control sound volume
+    sound_slider.addClass("Slider");
+    
+    battle_fodder.loop();  // Starts playing the sound
 
     // Assigning the member variavles of Marine to their appropiate values based on window size
     Marine.x_cord = windowWidth/1.5 * (0.5);
@@ -80,20 +89,27 @@ function keyPressed(){
 
 function draw() {
     background(194, 178, 128);  // Draws the sand colored background
-    
-    var current_time = int(millis() / 1000);
-    time_remaining = time_limit - current_time;
 
+    battle_fodder.setVolume(sound_slider.value());  // Adjusts the sound based on slider value
+    
+    var current_time = int(millis() / 1000);  // Seconds since the sketch began
+    time_remaining = time_limit - current_time;  // Time on countdown is 20 - current seconds passed
+
+    // Text styling
     textSize(windowWidth/20);
     textAlign(CENTER, CENTER);
     textStyle(BOLD);
 
+    // If the player hit an incoming soldier, end the game.
+    // Also, display "YOU DIED!" on screen to notify the player they lost.
     if (died) {
         background(0);
         fill('red');
         textSize(windowHeight/15);
         text("You Died!", windowWidth/1.5 * (0.5), windowHeight/1.5 * (0.5));
-
+    
+    // The player is still playing the game.
+    // (The player has not hit an incoming soldier);
     } else {
         if (time_remaining > 0) {
             imageMode(CENTER);
@@ -118,6 +134,9 @@ function draw() {
                     soldier_array[i].x_cord = random(windowWidth/1.5 * (0.20) / 4, windowWidth/1.5 - (windowWidth/1.5 * (0.20)/ 4));
                     soldier_array[i].y_cord = 0;
                     soldier_array[i].speed = random(1, 5);
+                
+                // Check to see if the player hits one of the 3 incoming soldiers
+                // if so, then it will end the game next interation.
                 } else if (soldier_array[i].y_cord >= Marine.y_cord - Marine.height/2 
                            && (soldier_array[i].x_cord > Marine.x_cord - Marine.width/2
                                && soldier_array[i].x_cord < Marine.x_cord + Marine.width/2)) {
@@ -125,17 +144,23 @@ function draw() {
     
                 }
             }
-    
+            
+            // Gray box housing the countdown
             fill(25, 25, 25);
             rect(CENTER);
             rect(0, windowHeight/1.5 * (0.001), windowWidth/1.2, windowHeight/10);
-    
             fill('red');
+
+            // Time remaining display on the top of the screen.
             if (time_remaining == 1) {
                 text("Survive for: " + time_remaining + " second!", windowWidth/1.5 * (0.5), windowHeight/1.5 * (0.08));
             } else {
                 text("Survive for: " + time_remaining + " seconds!", windowWidth/1.5 * (0.5), windowHeight/1.5 * (0.08));
             }
+        
+        // The player survived (did not get hit) for 20 seconds.
+        // This means the player beat the game!
+        // Displays "YOU SURVIVED!" on a the screen.
         } else {
             time_remaining = 0;
             background(0);
