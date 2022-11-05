@@ -10,11 +10,11 @@ function setup() {
   let s2 = 'The catalyst for these battles was the brutal killing and mutilation of four Blackwater PMCs. '
   + 'These mutilations were broadcasted and spread all over the media at the time.'
 
-  let s3 = 'I will be focusing primarily on the first battle which caused 27 U.S. deaths and around 1000 local deaths. '
+  let s3 = 'I will be focusing primarily on the second battle which caused 95 U.S. deaths and around 1500 local deaths. '
   + 'Around 600 of these local deaths were civilians, while the rest were insurgents/militants.';
 
   let s4 = 'The fighting during this battle was super dense urban combat which led to the massive percentage '
-  + 'of civilian casualties. This first battle was especially traumatizing given the circumstances and led '
+  + 'of civilian casualties. This second battle was especially traumatizing given the circumstances and led '
   + 'to the public opinions severely declining regarding the Iraq war.';
 
   s5 = 'CONTENT WARNING';
