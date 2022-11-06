@@ -15,18 +15,22 @@ var pigeon;
 var building;
 
 // Text about each of the objects that can be clicked
+
+// https://www.youtube.com/watch?v=qPpRYm9iMto
 var highway_text = "The image that you just clicked on is Highway 10 located in the center of Fallujah today."
 + "\n\nThis same highway was a main contender of trauma that U.S. Marines faced during combat."
 + "\n\nMarines had to cross this six lane highway in order to reach a weapon cache and insurgent headquarters."
 + "\n\nThis highway had multi-story buildings alongside it, all of which had numerous windows."
 + "\n\nMany U.S. Marines lost their lives trying to cross this highway as 'it seemed like fire was coming from everywhere.'";
 
+// https://www.youtube.com/watch?v=sphSdmOusI0
 var mask_text = "The image that you just clicked on is a black mask that many insurgents wore in Fallujah."
 + "\n\nThis black ski mask was usually paired with black clothing and other black apparel."
 + "\n\nThese insurgents were the main combatants that U.S. marines faced when fighting in the city of Fallujah."
 + "\n\nThese insurgents were extremely difficult to spot during nightime operations given their all-black outfits."
 + "\n\nAs previously mentioned on the first page, many U.S. Marines lost their lives because of these black outfits.";
 
+// https://www.youtube.com/watch?v=sphSdmOusI0
 var pigeon_text = "The pigeon that you clicked on represents on what Elliot Ackerman remembers to this day."
 + "\n\nElliot Ackerman was a Marine Platoon Leader during the second battle of Fallujah."
 + "\n\nHe and his platoon were holed up in a building, and there was only one way in and out."
