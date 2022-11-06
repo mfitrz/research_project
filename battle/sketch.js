@@ -44,8 +44,13 @@ var battle_fodder;  // Background noise (gunshots, explosions, etc.)
 
 // Loads all the necessary images and sounds
 function preload() {
+    // https://www.istockphoto.com/fr/photo/vue-arri%C3%A8re-du-soldat-gm480608747-36767942
     marine_image = loadImage('./soldier.png');
+
+    // https://www.clipartmax.com/middle/m2i8i8N4b1K9d3Z5_free-png-soldier-silhouette-png-images-transparent-soldier-silhouette-png/
     soldier_image = loadImage('./soldier_2.png');
+
+    // https://www.youtube.com/watch?v=CdeRiLnb88c
     battle_fodder = loadSound('./battle_sound.mp3');
 }
 

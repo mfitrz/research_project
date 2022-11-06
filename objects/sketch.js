@@ -1,9 +1,17 @@
 // Image variables representing objects
-var new_highway;
-var old_highway;
+var new_highway;  // Taken from Google Earth (website version)
+var old_highway;  // Taken from Google Earth Pro (I took a screenshot of it)
+
+// https://www.walmart.com/ip/3-Hole-Winter-Ski-Mask-Balaclava-Black/48346342
 var mask;
+
+// https://www.nbcnews.com/id/wbna5911852
 var insurgent;
+
+// https://www.allaboutbirds.org/guide/Rock_Pigeon/id
 var pigeon;
+
+// https://www.businessinsider.com/fallujah-after-isis-2016-7
 var building;
 
 // Text about each of the objects that can be clicked

@@ -3,6 +3,9 @@ let s5;
 function setup() {
 
   // Background information about my project
+  // https://www.britannica.com/event/Second-Battle-of-Fallujah
+  // https://www.usmcu.edu/Portals/218/FALLUJAH.pdf
+  // https://en.wikipedia.org/wiki/Second_Battle_of_Fallujah
   let s = 'The First and Second Battles of Fallujah took place during the Iraq War. '
   + 'The first battle took place from April 4 - May 1 2004. '
   + 'The second battle took place from November 7 - December 23, 2004. ';
